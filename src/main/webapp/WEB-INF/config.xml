@@ -18,7 +18,7 @@
 	http://docs.cksource.com/CKFinder_2.x/Developers_Guide/Java/Configuration/baseURL_and_baseDir
 	-->
 	<baseDir></baseDir>
-	<baseURL>/upload/userfiles/</baseURL>
+	<baseURL>w951-web-zsbus-news/upload/userfiles/</baseURL>
 	<licenseKey></licenseKey>
 	<licenseName></licenseName>
 	<!--
