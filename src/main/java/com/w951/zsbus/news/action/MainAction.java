@@ -24,6 +24,10 @@ public class MainAction extends CommonBaseAction {
     	return SUCCESS;
     }
     
+    public String outside() throws Exception {
+    	return SUCCESS;
+    }
+    
 	// getter setter
 
 	public JSONObject getResult() {
