@@ -37,6 +37,7 @@
 					$("#category_categoryId").val(row.categoryId);
 					$("#category_categoryName").val(row.categoryName);
 					$("#category_categorySort").val(row.categorySort);
+					$("#category_categoryShow").combobox("setValue", row.categoryShow);
 				}
 			}
 			
@@ -108,6 +109,7 @@
 	  			<tr>
 	  				<th data-options="field:'categoryName'">分类名称</th>
 	  				<th data-options="field:'categorySort'">分类排序</th>
+	  				<th data-options="field:'categoryShow'">首页显示</th>
 	  				<th data-options="field:'categoryCreatename'">创建人</th>
 	  				<th data-options="field:'categoryCreatedate'">创建时间</th>
 	  			</tr>
@@ -142,6 +144,15 @@
 	   				<tr>
 		    			<td align="right">分类排序</td>
 		    			<td><input id="category_categorySort" class="easyui-numberbox" type="text" name="category.categorySort" data-options="required:true" style="width:80%;"></input></td>
+		    		</tr>
+		    		<tr>
+		    			<td align="right">首页显示</td>
+		    			<td>
+		    				<select class="easyui-combobox" id="category_categoryShow" name="category.categoryShow" data-options="required:true, editable:false" style="width:150px;">
+		    					<option value="false">否</option>
+		    					<option value="true">是</option>
+		    				</select>
+		    			</td>
 		    		</tr>
 	   			</table>
 	   		</form>

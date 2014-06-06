@@ -19,6 +19,7 @@ public class CategoryDTO implements Serializable {
     private String categoryPid;
     private String categoryName;
     private Integer categorySort;
+    private Boolean categoryShow;
     private String categoryCreatename;
     private String categoryCreatedate;
     private List<CategoryDTO> children;
@@ -77,6 +78,14 @@ public class CategoryDTO implements Serializable {
 
 	public void setChildren(List<CategoryDTO> children) {
 		this.children = children;
+	}
+
+	public Boolean getCategoryShow() {
+		return categoryShow;
+	}
+
+	public void setCategoryShow(Boolean categoryShow) {
+		this.categoryShow = categoryShow;
 	}
 
 }

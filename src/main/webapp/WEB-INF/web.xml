@@ -59,7 +59,8 @@
 			<param-name>config</param-name>
 			<param-value>
 				struts-default.xml,struts-plugin.xml,
-				com/w951/zsbus/news/config/struts.xml
+				com/w951/zsbus/news/config/struts.xml,
+				com/w951/zsbus/news/config/struts-api.xml
 			</param-value>
 		</init-param>
 	</filter>

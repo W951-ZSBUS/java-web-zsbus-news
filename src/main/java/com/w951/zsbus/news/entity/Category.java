@@ -25,6 +25,7 @@ public class Category implements java.io.Serializable {
 	private String categoryPid;
 	private String categoryName;
 	private Integer categorySort;
+	private Boolean categoryShow;
 	private String categoryCreatename;
 	private String categoryCreatedate;
 	private List<Article> articles = new ArrayList<Article>();
@@ -93,6 +94,15 @@ public class Category implements java.io.Serializable {
 
 	public void setArticles(List<Article> articles) {
 		this.articles = articles;
+	}
+
+	@Column(name = "category_show")
+	public Boolean getCategoryShow() {
+		return categoryShow;
+	}
+
+	public void setCategoryShow(Boolean categoryShow) {
+		this.categoryShow = categoryShow;
 	}
 
 }
